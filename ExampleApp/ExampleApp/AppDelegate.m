@@ -63,6 +63,8 @@
 {
     NSURL* url = [NSURL URLWithString:@"http://www.abstractpath.com/files/audiosamples/sample.mp3"];
     
+    url = [NSURL URLWithString:@"http://loma.cgee.com:8123"];
+    
     STKDataSource* dataSource = [STKAudioPlayer dataSourceFromURL:url];
     
 	[audioPlayer setDataSource:dataSource withQueueItemId:[[SampleQueueId alloc] initWithUrl:url andCount:0]];
